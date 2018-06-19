@@ -124,6 +124,6 @@ else
 
 **Resolução de dúvidas referentes ao trabalho:**
 
-1.Acessar o fórum específico para o Trabalho Prático II no Moodle e inserir lá toda e qualquer pergunta pertinente ao trabalho. 
+1. Acessar o fórum específico para o Trabalho Prático II no Moodle e inserir lá toda e qualquer pergunta pertinente ao trabalho. 
 
 2. OBS.: preferencialmente, usar o fórum do Moodle em vez de e-mail para que toda a turma possa interagir e socializar dúvidas e dicas.
