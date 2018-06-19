@@ -13,17 +13,27 @@ estudo de pipelining através da execução de programas MIPS 32 bits no simulad
 a. Execute  o  programa  abaixo  no  simulador  WebSimple.  Utilize  a configuração padrão para tempo monociclo (50 ns) e para pipeline (10 ns). Não utilize forwarding (deixe desmarcadas todas as opções MEM → EX,WB  →  EX,  WB  →  MEM.  Indique:  a)  as  dependências  de  dados existentes;  b)  a  quantidade  de  ciclos  ociosos  no  pipeline;  c)  o desempenho (speed up) obtido.
 
 lw  $1, 0($1)
+
 lw  $2, 4($0)
+
 add $3, $1, $2
+
 sw  $3, 12($0)
+
 lw  $4, 8($0)
+
 add $5, $1, $4
-sw  $5, 
-16($0)
+
+sw  $5,16($0)
+
 add $1, $0, $3
+
 sub $3, $2 $2
+
 lw  $6, 8($0)
+
 add $5, $6, $4
+
 add $1, $6, $6
 
 b. Modifique  o  exercício  anterior  para  considerar forwarding entre  os estágios MEM → EX. Indique novamente: a) as dependências de dados existentes;  b)  a  quantidade  de  ciclos  ociosos  no  pipeline;  c)  o desempenho (speed up) obtido.
@@ -42,29 +52,45 @@ WebSimple  e  repita  os  passos executados  nos  exercícios **a** a **e** (hab
 **TRECHO 1**
 
 for(i=0; i<20; i++) {
+
   scanf(“%d”,&x);
+  
   vetor[i] = x;
+  
   y = vetor[i] + x + i;
+  
 }
 
 **TRECHO 2**
 
 x = 10;
+
 y = 0;
+
 do {
+
   z = (x*2) + y;
+  
   y--;
+  
   scanf(“%d”,&x);
+  
 } while (x < 50);
 
 **TRECHO 3**
 
 scanf(“%d”, &x);
+
 if (x < 10) && (x > 2) {
+
   z = x + 200;
+  
   y = z * z;
+  
 }
+
 else 
+
   z = x + 32;
 
 3. O trabalho poderá ser realizado de forma individual ou em duplas.
